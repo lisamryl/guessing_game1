@@ -12,7 +12,7 @@ guess = None
 print correct_num
 
 while guess != correct_num:
-    guess = int(raw_input("What is your guess?"))
+    guess = int(raw_input("What is your guess?\n"))
     guess_count += 1
     if guess < correct_num: 
         print "Too low! Guess again. Total guesses so far: {}".format(guess_count)
