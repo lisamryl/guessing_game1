@@ -18,11 +18,11 @@ while guess != correct_num:
     guess = int(raw_input("What is your guess?\n"))
     if guess < 1 or guess > 100:
         print "Out of range, guess again"
-    else:
-        guess_count += 1
-        if guess < correct_num:
-            print "Too low! Guess again. Total guesses so far: {}".format(guess_count)
-        elif guess > correct_num:
-            print "Too high! Guess again."
-        elif guess == correct_num:
-            print "Congrats, you guessed correctly after {} guesses!".format(guess_count)
+        continue
+    guess_count += 1
+    if guess < correct_num:
+        print "Too low! Guess again. Total guesses so far: {}".format(guess_count)
+    elif guess > correct_num:
+        print "Too high! Guess again."
+    elif guess == correct_num:
+        print "Congrats, you guessed correctly after {} guesses!".format(guess_count)
